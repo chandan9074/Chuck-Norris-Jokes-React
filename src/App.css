@@ -1,0 +1,98 @@
+body {
+  margin: 0px;
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+}
+
+.body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_style {
+  padding: 3vh;
+  background-color: rgb(3, 34, 36);
+  border-radius: 4vh;
+  box-shadow: 0vh 0vh 8vh rgb(17, 32, 32);
+}
+
+.caption_style {
+  width: 60vh;
+  word-wrap: break-word;
+  font-size: 3vh;
+  text-align: center;
+  padding: 2vh;
+  border-radius: 5vh;
+  color: rgb(166, 247, 220);
+  font-family: "Newsreader", serif;
+}
+
+.btn_style {
+  outline: none;
+  background-color: transparent;
+  border: 0px;
+  height: auto;
+  padding: 2vh;
+  width: auto;
+  border-radius: 3vh;
+  font-size: 3vh;
+  letter-spacing: 0.5vh;
+  transition: 0.5s;
+  cursor: pointer;
+  color: aqua;
+  font-family: "Domine", serif;
+}
+
+.btn_style:hover {
+  color: rgb(3, 34, 36);
+  background: rgb(2, 214, 214);
+  box-shadow: 0 0 10px rgb(2, 214, 214), 0 0 40px rgb(2, 214, 214),
+    0 0 10px rgb(2, 214, 214);
+}
+
+.btn_align {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.spinner_style {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 25vh;
+  height: 25vh;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 1vh;
+  box-sizing: border-box;
+  border: 10vh solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
